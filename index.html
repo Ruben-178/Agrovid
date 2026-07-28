@@ -47,6 +47,39 @@
         </ol>
     </section>
 
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p class="section-intro">¿Tienes dudas sobre un producto o necesitas asesoría para tu cultivo o ganado? Escríbenos.</p>
+        <form action="#" method="post">
+            <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+            </div>
+
+            <div class="campo">
+                <label for="asunto">Asunto</label>
+                <select id="asunto" name="asunto">
+                    <option value="productos">Consulta de productos</option>
+                    <option value="pedido">Estado de un pedido</option>
+                    <option value="asesoria">Asesoría agropecuaria</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos qué necesitas..." required></textarea>
+            </div>
+
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </section>
+
     <footer>
         <p>&copy; 2026 Agrovid</p>
     </footer>
