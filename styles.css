@@ -25,6 +25,22 @@ header p {
   max-width: 500px;
 }
 
+#btn-tema {
+  margin-top: 1rem;
+  background-color: #FFFFFF;
+  color: #3E6B3A;
+  border: none;
+  padding: 0.5rem 1.1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+#btn-tema:hover {
+  background-color: #EAEAEA;
+}
+
 /* ---------- Nav ---------- */
 
 nav {
@@ -72,6 +88,33 @@ article {
   border-left: 3px solid #3E6B3A;
   padding: 0.8rem 1rem;
   margin-top: 0.8rem;
+}
+
+/* ---------- Horarios ---------- */
+
+#btn-horarios {
+  background-color: #3E6B3A;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.5rem 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+#btn-horarios:hover {
+  background-color: #2E4F2B;
+}
+
+#lista-horarios {
+  margin-top: 0.9rem;
+  background-color: #F0EEE3;
+  border-left: 3px solid #3E6B3A;
+  padding: 0.8rem 1rem;
+}
+
+.oculto {
+  display: none;
 }
 
 /* ---------- Contact form ---------- */
@@ -141,4 +184,56 @@ footer {
     margin: 1rem auto;
     padding: 1rem;
   }
+}
+
+/* ---------- Modo oscuro ---------- */
+
+body.oscuro {
+  background-color: #1B1B1B;
+  color: #F0EEE3;
+}
+
+body.oscuro header {
+  background-color: #1F3320;
+}
+
+body.oscuro #btn-tema {
+  background-color: #F0EEE3;
+  color: #1F3320;
+}
+
+body.oscuro #btn-tema:hover {
+  background-color: #D8D5C8;
+}
+
+body.oscuro nav {
+  background-color: #142016;
+}
+
+body.oscuro section {
+  background-color: #2A2A2A;
+  color: #F0EEE3;
+  border-color: #444;
+}
+
+body.oscuro section h2 {
+  color: #6FAE6A;
+}
+
+body.oscuro article,
+body.oscuro #lista-horarios {
+  background-color: #333333;
+  border-left-color: #6FAE6A;
+}
+
+body.oscuro input,
+body.oscuro select,
+body.oscuro textarea {
+  background-color: #3A3A3A;
+  color: #F0EEE3;
+  border-color: #666;
+}
+
+body.oscuro footer {
+  color: #CCC;
 }
