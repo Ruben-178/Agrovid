@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Café el Trigal </title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+  <header>
+    <h1> CAFE EL TRIGAL </h1>
+    <nav>
+      <a href="#inicio"> Inicio </a>
+      <a href="#cafe"> Nuestro Cafe </a>
+      <a href="#contacto"> Contacto</a>
+    </nav>
+  </header>
+  <main>
+    <section id="cafe">
+      <h2> Nuestro Cafe </h2>
+      <p>
+        Bienvenido, en el CAFE EL TRIGAL preparamos bebidas calientes
+        con ingredientes de calidad y brindamos un ambiente comodo para compartir con amigos y la familia.
+      </p>
+      <ul>
+        <li>Cafe americano 12 Bs</li>
+        <li>Capuchino 18 Bs</li>
+        <li>Submarino 15 Bs</li>
+      </ul>
+    </section>
+    <section id="contacto">
+      <h2> Haz tu pedido </h2>
+      <form>
+
+        <label for="nombre">Nombre completo</label><br>
+        <input type="text" id="nombre" required><br><br>
+
+        <label for="correo">Correo electrónico</label><br>
+        <input type="email" id="correo" required><br><br>
+
+        <label for="pedido">Tu pedido</label><br>
+        <textarea id="pedido"></textarea>
+
+    </form>
+    <br>
+    <br>
+
+    <button type="button" id="btn-confirmar">
+        Confirmar pedido
+    </button>
+    <p id="mensaje" class="oculto"></p>
+    </section>
+  </main>
+  <footer>Parcial 1 Ruben Chocamani Flores - 3 de Agosto de 2026</footer>
+  <script src="script.js"></script>
+  
+</body>
+</html>
