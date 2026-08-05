@@ -160,6 +160,30 @@ button[type="submit"]:hover {
   background-color: #2E4F2B;
 }
 
+/* ---------- Aviso del formulario ---------- */
+
+.aviso {
+  display: none;
+  margin-top: 0.3rem;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.aviso.error {
+  display: block;
+  background-color: #f8d7da;
+  color: #842029;
+  border-left: 4px solid #dc3545;
+}
+
+.aviso.exito {
+  display: block;
+  background-color: #d4edda;
+  color: #0f5132;
+  border-left: 4px solid #3E6B3A;
+}
+
 /* ---------- Footer ---------- */
 
 footer {

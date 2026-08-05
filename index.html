@@ -61,7 +61,7 @@
     <section id="contacto">
         <h2>Contacto</h2>
         <p class="section-intro">¿Tienes dudas sobre un producto o necesitas asesoría para tu cultivo o ganado? Escríbenos.</p>
-        <form action="#" method="post">
+        <form id="form-contacto" novalidate>
             <div class="campo">
                 <label for="nombre">Nombre</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
@@ -88,6 +88,8 @@
             </div>
 
             <button type="submit">Enviar mensaje</button>
+
+            <p id="aviso-contacto" class="aviso"></p>
         </form>
     </section>
 
