@@ -22,76 +22,80 @@
         </ul>
     </nav>
 
-    <section id="productos">
-        <h2>Productos de la semana</h2>
-        <ul>
-            <li>Fertilizantes orgánicos</li>
-            <li>Semillas certificadas</li>
-            <li>Insumos para ganado</li>
-        </ul>
-    </section>
+    <main>
 
-    <section>
-        <h2>Producto del día</h2>
-        <article>
-            <h3>Abono Foliar Multinutriente</h3>
-            <p>Presentación 1 litro, ideal para cultivos de hoja ancha.</p>
-        </article>
-    </section>
+        <section id="productos">
+            <h2>Productos de la semana</h2>
+            <ul>
+                <li>Fertilizantes orgánicos</li>
+                <li>Semillas certificadas</li>
+                <li>Insumos para ganado</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Top 3 más vendidos</h2>
-        <ol>
-            <li>Fertilizante NPK 15-15-15</li>
-            <li>Semilla de maíz híbrido</li>
-            <li>Suplemento mineral para vacunos</li>
-        </ol>
-    </section>
+        <section>
+            <h2>Producto del día</h2>
+            <article>
+                <h3>Abono Foliar Multinutriente</h3>
+                <p>Presentación 1 litro, ideal para cultivos de hoja ancha.</p>
+            </article>
+        </section>
 
-    <section id="horarios">
-        <h2>Horarios de atención</h2>
-        <button id="btn-horarios">Ver horarios</button>
-        <div id="lista-horarios" class="oculto">
-            <p>Lunes a viernes: 8:00 a.m. – 6:00 p.m.</p>
-            <p>Sábados: 8:00 a.m. – 1:00 p.m.</p>
-            <p>Domingos: cerrado</p>
-        </div>
-    </section>
+        <section>
+            <h2>Top 3 más vendidos</h2>
+            <ol>
+                <li>Fertilizante NPK 15-15-15</li>
+                <li>Semilla de maíz híbrido</li>
+                <li>Suplemento mineral para vacunos</li>
+            </ol>
+        </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p class="section-intro">¿Tienes dudas sobre un producto o necesitas asesoría para tu cultivo o ganado? Escríbenos.</p>
-        <form id="form-contacto" novalidate>
-            <div class="campo">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+        <section id="horarios">
+            <h2>Horarios de atención</h2>
+            <button id="btn-horarios">Ver horarios</button>
+            <div id="lista-horarios" class="oculto">
+                <p>Lunes a viernes: 8:00 a.m. – 6:00 p.m.</p>
+                <p>Sábados: 8:00 a.m. – 1:00 p.m.</p>
+                <p>Domingos: cerrado</p>
             </div>
+        </section>
 
-            <div class="campo">
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
-            </div>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p class="section-intro">¿Tienes dudas sobre un producto o necesitas asesoría para tu cultivo o ganado? Escríbenos.</p>
+            <form id="form-contacto" novalidate>
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                </div>
 
-            <div class="campo">
-                <label for="asunto">Asunto</label>
-                <select id="asunto" name="asunto">
-                    <option value="productos">Consulta de productos</option>
-                    <option value="pedido">Estado de un pedido</option>
-                    <option value="asesoria">Asesoría agropecuaria</option>
-                    <option value="otro">Otro</option>
-                </select>
-            </div>
+                <div class="campo">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+                </div>
 
-            <div class="campo">
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos qué necesitas..." required></textarea>
-            </div>
+                <div class="campo">
+                    <label for="asunto">Asunto</label>
+                    <select id="asunto" name="asunto">
+                        <option value="productos">Consulta de productos</option>
+                        <option value="pedido">Estado de un pedido</option>
+                        <option value="asesoria">Asesoría agropecuaria</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
 
-            <button type="submit">Enviar mensaje</button>
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos qué necesitas..." required></textarea>
+                </div>
 
-            <p id="aviso-contacto" class="aviso"></p>
-        </form>
-    </section>
+                <button type="submit">Enviar mensaje</button>
+
+                <p id="aviso-contacto" class="aviso"></p>
+            </form>
+        </section>
+
+    </main>
 
     <footer>
         <p>&copy; 2026 Agrovid</p>
