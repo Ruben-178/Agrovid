@@ -1,0 +1,263 @@
+body {
+  margin: 0;
+  background-color: #F4F1E8;
+  color: #2B2B2B;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* ---------- Header ---------- */
+
+header {
+  background-color: #3E6B3A;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin: 0 0 0.5rem;
+  letter-spacing: 1px;
+}
+
+header p {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+#btn-tema {
+  margin-top: 1rem;
+  background-color: #FFFFFF;
+  color: #3E6B3A;
+  border: none;
+  padding: 0.5rem 1.1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+#btn-tema:hover {
+  background-color: #EAEAEA;
+}
+
+/* ---------- Nav ---------- */
+
+nav {
+  background-color: #2E4F2B;
+  padding: 0.6rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Section cards ---------- */
+
+section {
+  max-width: 700px;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  background-color: #FFFFFF;
+  border: 1px solid #CCC;
+  border-radius: 8px;
+}
+
+section h2 {
+  margin-top: 0;
+  color: #3E6B3A;
+}
+
+article {
+  background-color: #F0EEE3;
+  border-left: 3px solid #3E6B3A;
+  padding: 0.8rem 1rem;
+  margin-top: 0.8rem;
+}
+
+/* ---------- Horarios ---------- */
+
+#btn-horarios {
+  background-color: #3E6B3A;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.5rem 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+#btn-horarios:hover {
+  background-color: #2E4F2B;
+}
+
+#lista-horarios {
+  margin-top: 0.9rem;
+  background-color: #F0EEE3;
+  border-left: 3px solid #3E6B3A;
+  padding: 0.8rem 1rem;
+}
+
+.oculto {
+  display: none;
+}
+
+/* ---------- Contact form ---------- */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #AAA;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  align-self: flex-start;
+  background-color: #3E6B3A;
+  color: #FFFFFF;
+  font-size: 1rem;
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #2E4F2B;
+}
+
+/* ---------- Aviso del formulario ---------- */
+
+.aviso {
+  display: none;
+  margin-top: 0.3rem;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.aviso.error {
+  display: block;
+  background-color: #f8d7da;
+  color: #842029;
+  border-left: 4px solid #dc3545;
+}
+
+.aviso.exito {
+  display: block;
+  background-color: #d4edda;
+  color: #0f5132;
+  border-left: 4px solid #3E6B3A;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+  text-align: center;
+  color: #555;
+  padding: 1.5rem 1rem;
+}
+
+/* ---------- Móvil ---------- */
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    padding: 1.5rem 1rem;
+  }
+
+  section {
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+}
+
+/* ---------- Modo oscuro ---------- */
+
+body.oscuro {
+  background-color: #1B1B1B;
+  color: #F0EEE3;
+}
+
+body.oscuro header {
+  background-color: #1F3320;
+}
+
+body.oscuro #btn-tema {
+  background-color: #F0EEE3;
+  color: #1F3320;
+}
+
+body.oscuro #btn-tema:hover {
+  background-color: #D8D5C8;
+}
+
+body.oscuro nav {
+  background-color: #142016;
+}
+
+body.oscuro section {
+  background-color: #2A2A2A;
+  color: #F0EEE3;
+  border-color: #444;
+}
+
+body.oscuro section h2 {
+  color: #6FAE6A;
+}
+
+body.oscuro article,
+body.oscuro #lista-horarios {
+  background-color: #333333;
+  border-left-color: #6FAE6A;
+}
+
+body.oscuro input,
+body.oscuro select,
+body.oscuro textarea {
+  background-color: #3A3A3A;
+  color: #F0EEE3;
+  border-color: #666;
+}
+
+body.oscuro footer {
+  color: #CCC;
+}
